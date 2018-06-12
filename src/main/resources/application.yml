@@ -1,0 +1,21 @@
+server:
+  port: 8089
+
+
+spring:
+  application:
+    name: attendance   #工程名
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/qc
+    username: root
+    password: panpan
+
+
+beetl-beetlsql:
+  dev: true
+beetlsql:
+  basePackage: org.hp.springboot.kotlin.seed
+  nameConversion: org.beetl.sql.core.UnderlinedNameConversion
+beetl:
+  enabled: false  #开启页码beetl模板引擎
